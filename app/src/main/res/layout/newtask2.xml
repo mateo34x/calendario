@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btnl"
+        android:backgroundTint="@color/pink"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jueves,06 julio 2023"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/pink"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tarea" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="descripcion" />
+
+
+    <EditText
+        android:id="@+id/fechaselected"
+        android:layout_width="match_parent"
+        android:textColor="@color/blu"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:enabled="false"/>
+
+
+    <EditText
+        android:id="@+id/fechaendselected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="fecha final"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Importancia" />
+
+    <Spinner
+        android:id="@+id/importanceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
+
+</LinearLayout>

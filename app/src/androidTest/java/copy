@@ -1,0 +1,29 @@
+                if (date.getDate().equals(localDate)) {
+
+                    valor = "Nueva tarea para: Hoy";
+                    aux = date.getDate().format(DateTimeFormatter.ofPattern(dateformat));
+
+                } else if (date.getDate().equals(localDate.plusDays(1))) {
+
+                    valor = "Nueva tarea para: Mañana";
+                    aux = date.getDate().format(DateTimeFormatter.ofPattern(dateformat));
+
+                } else if (date.getDate().equals(localDate.plusDays(3))) {
+
+                    valor = "Nueva tarea para: Dentro de 3 días";
+                    aux = date.getDate().format(DateTimeFormatter.ofPattern(dateformat));
+
+                } else if (date.getDate().isAfter(LocalDate.of(localDate.getYear(), 12, 31))) {
+
+                    String selectedDate = date.getDate().format(DateTimeFormatter.ofPattern(dateformat));
+                    valor = "Nueva tarea para el: " + selectedDate;
+                    aux = date.getDate().format(DateTimeFormatter.ofPattern(dateformat));
+
+                } else {
+
+
+                    String selectedDate = date.getDate().format(DateTimeFormatter.ofPattern("EE, dd MMMM"));
+                    valor = "Nueva tarea para el: " + selectedDate;
+                    aux = date.getDate().format(DateTimeFormatter.ofPattern(dateformat));
+
+                }

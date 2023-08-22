@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Calendario" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/PrussianBluew</item>
+        <item name="colorSecondary">@color/SlateGray</item>
+
+    </style>
+
+
+    <style name="CalendarWidgetHeader">
+        <item name="android:textColor">@drawable/calendarcolors</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <style name="Circular">
+        <item name="cornerSize">30%</item>
+    </style>
+
+
+
+    <style name="Theme.Calendario" parent="Base.Theme.Calendario" />
+</resources>
